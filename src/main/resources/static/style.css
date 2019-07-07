@@ -1,0 +1,18 @@
+    
+html,
+body {
+  height: 100%;
+}
+
+hr {
+	border-width: 0.2em;
+}
+
+.container {
+	margin-top: 1em;
+}
+
+.errorMSG {
+	color: red;
+	font-style: italic;
+}

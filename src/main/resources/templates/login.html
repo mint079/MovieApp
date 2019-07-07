@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<HTML xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+	<HEAD>
+		<link rel="stylesheet" href="/css/style.css" />
+		<title>Login page</title>
+		<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+	</HEAD>
+	
+	<BODY>
+		<h1>BookStore Login Page</h1>
+		
+		<div th:if="${param.error}">
+			<h3>Invalid username or password.</h3>
+		</div>
+		
+		<form th:action="@{/login}" method="post">
+			<p><label>User Name: <input type="text" name="username" /></label></p>
+			<p><label>Password: <input type="text" name="password" /></label></p>
+			<p><input type="submit" value="Sign in" /></p>
+		</form>
+		
+	</BODY>
+</HTML>
